@@ -1,0 +1,94 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>SOLAR SYSTEM</title>
+	</head>
+<body>
+	<h1>INFORMATION ABOUT PLANETS</h1>
+	<p>The Solar System is a gravitationally bound system of the Sun and the objects that orbit it. 
+	   The largest of these objects are the eight planets, which in order from the Sun are four 
+	   terrestrial planets (Mercury, Venus, Earth and Mars); two gas giants (Jupiter and Saturn);
+	   and two ice giants (Uranus and Neptune) 1. The four outer planets, also called giant planets 
+	   or Jovian planets, collectively make up 99% of the mass known to orbit the Sun. Jupiter and 
+	   Saturn are together more than 400 times the mass of Earth and consist overwhelmingly of the 
+	   gases hydrogen and helium, hence their designation as gas giants .
+
+	   The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot 
+	   plasma, with internal convective motion that generates a magnetic field via a dynamo process.
+	   It is by far the most important source of energy for life on Earth. Its diameter is about 109
+	   times that of Earth, and its mass is about 330,000 times that of Earth, accounting for about
+	   99.86% of the total mass of the Solar System</p>
+	<h1>PLANETS</H1>
+	<img src="solar system.jpg" alt="Image 1">
+	<h2>Mercury: The smallest planet in the Solar System and the closest to the Sun. It has no moons and no atmosphere</h2>
+	<img src="images.jpg" alt="images" width="500" height="333">
+	<h2>Venus: is the second planet from the Sun and is the second largest terrestrial planet. It has a thick atmosphere
+	that traps heat and makes Venus very hot</h2>
+	<img src="venus.jpg" alt="images" width="500" height="333">
+	<h2>Earth: is the third planet from the Sun and is the only planet known to support life</h2>
+	<img src="earth.jpg" alt="images" width="500" height="500">
+	<h2>Mars: is a cold desert world that is half the size of Earth. It has a thin atmosphere made of carbon dioxide, nitrogen, and argon</h2>
+	<img src="mars.jpg" alt="images" width="500" height="333">
+	<h2>Jupiter: is the largest planet in the solar system and is primarily composed of hydrogen (90% by volume) and helium. It has a faint
+	planetary ring system and a powerful magnetosphere, and forms a system of 95 known moons and probably many more, including the four large
+	moons discovered by Galileo Galilei in 1610: Io, Europa, Ganymede, and Callisto</h2>
+	<img src="jupiter.jpg" alt="images" width="500" height="500">
+	<h2>Saturn:is the sixth planet from the Sun and the second-largest planet in our solar system. It is a gas giant with an average radius
+	of about nine-and-a-half times that of Earth. It has a faint planetary ring system and a powerful magnetosphere, and forms a system of 95 
+	known moons and probably many more</h2>
+	<img src="saturn.jpg" alt="images" width="500" height="333">
+	<h2>Uranus is the seventh planet from the Sun and is blue-green in color due to large amounts of methane in its atmosphere. It has a unique
+	tilt that makes it appear to spin on its side</h2>
+	<img src="uranaus.jpg" alt="images" width="500" height="333">
+	<H2>Neptune is the eighth planet from the Sun and is the fourth-largest planet in the Solar System by diameter. It is an ice giant, similar
+	to a gas giant, and is made of a thick soup of water, ammonia, and methane flowing over a solid core about the size of Earth</h2>
+	<img src="neptune.jpg" alt="images" width="500" height="333">
+
+<h1>PLESE!GIVE THE RATINGS DEPENDING ON THE PROJECT</h1>
+
+    <form id="pollForm">
+        <label for="option1">
+            <input type="radio" name="pollOption" id="option1" value="Option 1"> 1 STAR
+        </label>
+
+        <label for="option2">
+            <input type="radio" name="pollOption" id="option2" value="Option 2"> 2 STAR
+        </label>
+
+        <label for="option3">
+            <input type="radio" name="pollOption" id="option3" value="Option 3"> 3 STAR
+        </label>
+		
+		<label for="option3">
+            <input type="radio" name="pollOption" id="option4" value="Option 4"> 4 STAR
+        </label>
+		
+		<label for="option3">
+            <input type="radio" name="pollOption" id="option5" value="Option 5"> 5 STAR
+        </label>
+        <button type="button" onclick="submitVote()">Submit Vote</button>
+    </form>
+
+    <div id="result">
+        <!-- The poll results will be displayed here -->
+    </div>
+
+    <script>
+        function submitVote() {
+            // Get the selected option
+            var selectedOption = document.querySelector('input[name="pollOption"]:checked');
+
+            // Check if an option is selected
+            if (selectedOption) {
+                // Display a message or send the vote to the server
+                var resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = "Thank you for voting! You voted for: " + selectedOption.value;
+
+                // You can also send the vote to the server using AJAX if needed
+                // Example: SendVoteToServer(selectedOption.value);
+            } else {
+                alert("Please select an option before submitting your vote.");
+            }
+        }
+    </script>
+</body></html>
